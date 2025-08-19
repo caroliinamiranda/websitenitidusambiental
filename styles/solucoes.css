@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #22526d;
+    --cor-secundaria: #9fc640;
+    --cor-terciaria: #ffffff;
+    --cor-quartenaria: #222222;
+    --font-principal:"Raleway", sans-serif;
+}
+
+* {
+    margin:0%;
+    padding:0%;
+}
+.body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color:var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    border: 5px solid var(--cor-terciaria);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 45px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 7px;
+}
+
+.menu__links{
+    width: 100%;
+    background-color: var(--cor-primaria);
+    padding: 2% 0% 1% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3%;
+}
+
+.menu__links a{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.menu__links a:hover{
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.menu__links img{
+    width: 80%;
+}
+
+.menu__mobile{
+    display: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 0%;
+}
+
+.metodologia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0% 10% 0% 0%;
+    gap: 4%;
+}
+
+.metod__text{
+    width: 70%;
+}
+
+.metod__text__title{
+    font-family: var(--font-principal);
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
+    padding: 1% 0%;
+}
+
+.metodologia p{
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    color: var(--cor-quartenaria);
+    line-height: 1.7rem;
+    padding: 1% 0%;
+}
+
+.metodologia a {
+    width: 20%;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 2% 7%;
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10%;
+}
+
+.metodologia a:hover{
+    text-decoration: underline;
+}
+
+.solutions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/backg_solutions.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 0%;
+    margin: 2% 0%;
+}
+
+.sol__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+hr{ 
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    border-width: 1% 0%;
+    width:30%;
+    margin: 5% 0%;
+}
+
+.solutions div{
+    display: flex;
+    justify-content: center;
+    padding: 2% 6%;
+}
+
+.sol__pombos__text, .sol__aeroporto__text, .sol__fauna__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.sol__text__title{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1% 0%;
+}
+
+.solutions h2{
+    font-family: var(--font-principal);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    padding: 1% 0%;
+}
+
+.solutions h1{
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+}
+
+.solutions h3{
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+}
+
+.solutions p{
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--cor-terciaria);
+    padding: 1% 0%;
+}
+
+.solutions img{
+    border-radius: 10px;
+}
+
+.solutions a{
+    width: 20%;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 2% 3%;
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.solutions a:hover{
+    text-decoration: underline;
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 6% 0% 6%;
+}
+
+.education-bloc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6%;
+}
+
+.education__pictures{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.education img{
+    border-radius: 10px;
+}
+
+.ed__text__title{
+    font-family: var(--font-principal);
+    font-size: 2.5rem;
+    color: var(--cor-secundaria);
+    padding: 1% 0%;
+}
+
+.education p{
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    color: var(--cor-quartenaria);
+    line-height: 1.7rem;
+    padding: 1% 0%;
+}
+
+.ed__text a{
+    width: 20%;
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+    border-radius: 10px;
+    padding: 2% 7%;
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10%;
+}
+
+.ed__text a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    background-color: var(--cor-primaria);
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+}
+
+.footertitle{
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+}
+
+.footertext{
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    color: var(--cor-terciaria);
+    letter-spacing: 1px;
+}
+
+.copyright{
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+    padding-top: 1%;
+}
+
+/*4K*/
+
+@media screen and (min-width: 2600px){
+    .btn-whatsapp{
+        width: 150px;
+        height: 150px;
+        bottom: 70px;
+        right: 100px;
+        font-size: 100px;
+        border-radius: 50%;
+        border: 10px solid var(--cor-terciaria);
+    }
+    .fa-whatsapp{
+        margin-top: 23px;
+    }
+    .menu__links a{
+        font-size: 2.2rem;;
+    }
+    .menu__links img{
+        width: 120%;
+    }
+    .metod__text__title{
+        font-size: 7rem; 
+    }  
+    .metodologia p{
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        padding-bottom: 3%;
+    }
+    .metodologia img{
+        width: 30%;
+    }
+    .metodologia a{
+        padding: 2% 7%;
+        font-size: 3.5rem;
+        margin-top: 20%;
+    }
+    .sol__pombos__text, .sol__aeroporto__text, .sol__fauna__text{
+        width: 70%;
+        gap: 6%;
+    }
+    .solutions img{
+        width: 30%;
+    }
+    .solutions h1{
+        font-size: 4rem;
+    }
+    .solutions h2{
+        font-size: 7rem;
+    }
+    .solutions h3{
+        font-size: 4rem;
+    }
+    .sol__text__title{
+        font-size: 4rem;
+    }
+    .solutions p{
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+    .solutions a{
+        font-size: 3.5rem;
+    }
+    .ed__text__title{
+        font-size: 7rem;
+    }
+    .education{
+        padding: 4% 10% 2% 7%;
+    }
+    .education__pictures{
+        width: 30%;
+    }
+    .education img{
+        width: 100%;
+    }
+    .ed__text{
+        width: 70%;
+    }
+    .ed__text__title{
+        padding: 0%;
+    }
+    .education p{
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        padding-bottom: 2%;
+    }
+    .education a{
+        font-size: 3.5rem;
+    }
+    .footertitle{
+        font-size: 5rem;
+        padding-bottom: 0.5%;
+    }
+    .footertext{
+        font-size: 3.3rem;
+        line-height: 4.2rem;
+    }
+    .media-icons img{
+        width: 150px;
+        height: 150px;
+        padding: 0.2%;
+    }
+    .copyright{
+        font-size: 2.5rem;
+    }
+}
+
+/*4K END*/
+
+/*MOBILE*/
+
+@media screen and (max-width: 1024px){
+
+    .menu__mobile{
+        width: 100%;
+        position: absolute; 
+        padding: 5% 0% 3% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        z-index: 999;
+        background-color: var(--cor-primaria);
+    }
+    .menu__mobile__hamb{
+        width: 50px;
+        height: 38px;
+        background-image: url("/assets/menu_hamburguer.png");
+        display: inline-block;
+        position: relative;
+    }
+    .menu__mobile__hamb:hover{
+        background-image: url("/assets/menu_hamburguer_hover.png");
+    }
+    .menu__list{
+        display: none;
+        position: absolute;
+        list-style-type: none;
+        top: 100%;
+        background-color: var(--cor-terciaria);
+        border: var(--cor-primaria) solid 0.5px;
+        width: 45%;
+        border-radius: 7px;
+    }
+    .menu__mobile__button:checked ~ .menu__list{
+        display: block;
+    }
+    .menu__mobile__link{
+        text-decoration: none;
+        color: var(--cor-primaria);
+        font-family: var(--font-principal);
+    }
+    .menu__mobile__link:hover{
+        color: var(--cor-primaria);
+    }
+    .menu__mobile__item{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 7%;
+    }
+    .menu__mobile__item:hover{
+        background-color: var(--cor-secundaria);
+    }
+    .menu__mobile__button{
+        display: none;
+    }
+    .menu__links{
+        display: none;
+    }
+    .metodologia{
+        padding: 23% 0% 7% 0%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .metod__text__title{
+        padding: 4%;
+    }
+    .solutions{
+        text-align: center;
+        padding: 7% 2%;
+    }
+    .sol__pombos, .sol__aeroporto, .sol__fauna{
+        flex-direction: column;
+    }
+    .solutions img{
+        padding: 0% 15%;
+        border-radius: 10px;
+    }
+    .solutions a{
+        width: 40%;
+    }
+    .education-bloc{
+        flex-direction: column;
+        text-align: center;
+        padding: 5%;
+    }
+    .ed__text__title{
+        padding: 4%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .menu__list{
+        width: 70%;
+    }
+    .metodologia img{
+        padding-top: 7%;
+    }
+    .metodologia a {
+    padding: 3% 10%;
+    }
+    .solutions p{
+        padding: 0% 3% 0% 3%;
+    }
+    .education p{
+        padding: 0% 7% 0% 7%;
+    }
+    .education img{
+        padding: 3% 15% 0% 15%;
+    }
+    .footer{
+        padding: 15% 5%;
+    }
+}

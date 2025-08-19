@@ -1,0 +1,212 @@
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.slider{
+    width: 400%;
+    display: flex;
+    flex-direction: row;
+}
+
+.slider input{
+    display: none;
+}
+
+.slide{
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide__text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0% 0% 8%;
+}
+
+.slide h2{
+    font-family: var(--font-principal);
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--cor-terciaria);
+    letter-spacing: 1px;
+}
+
+.slide p{
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--cor-terciaria);
+    padding: 5% 0% 7% 0%;
+}
+
+.slide a{
+    width: 20%;
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 10px;
+    padding: 2% 7%;
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slide.two a{
+    width: 40%;
+}
+
+.slide a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.slide.one{
+    background-image: url("/assets/slide1.jpg");
+}
+
+.slide.two{
+    background-image: url("/assets/slide2.jpg");
+}
+
+.slide.three{
+    background-image: url("/assets/slide3.jpg");
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    padding-bottom: 4%;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid var(--cor-terciaria);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: var(--cor-terciaria);
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5{
+    background-color: var(--cor-terciaria);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+/* 4k */
+
+@media screen and (min-width: 2600px){
+
+    .slide h2{
+        font-size: 7rem;
+    }
+    .slide p{
+        font-size: 3.5rem;
+        line-height: 4.7rem;
+    }
+    .slide a{
+        font-size:3rem;
+        border-radius: 20px;
+    }
+    .slide.one a{
+        width: 40%;
+    }
+    .slide.two a{
+        width: 50%;
+    }
+    .slide.three a{
+        width: 40%;
+    }
+    .nav-manual .manual-btn, .nav-auto div{
+        padding: 20px;
+    }
+    .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+        margin-right:30px;
+    }
+}
+/* 4k END */
+
+/* MOBILE */
+
+@media screen and (max-width: 1024px){
+
+    .slide.one{
+        background-image: url("/assets/slide1_mobile.jpg");
+    }
+    
+    .slide.two{
+        background-image: url("/assets/slide2_mobile.jpg");
+    }
+    
+    .slide.three{
+        background-image: url("/assets/slide3_mobile.jpg");
+    }
+    .slide{
+        justify-content: center;
+        text-align: center;
+    }
+    .slide__text{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30% 0% 0% 0%;
+    }
+    .slide p{
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+    .slide a{
+        font-size:1.5rem;
+    }
+    .slide.one a{
+        width: 50%;
+    }
+    .slide.two a{
+        width: 80%;
+    }
+    .slide.three a{
+        width: 60%;
+    }
+}
+
+/* MOBILE END */
+
