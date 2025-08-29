@@ -181,6 +181,7 @@
 .certificate__content{
     width: 80%;
     padding-left: 10%;
+    text-align: center;
     gap: 5%;
 }
 
@@ -231,31 +232,56 @@
     width: 30%;
 }
 
-.clientes{
+.nitidus_fly{
     background-color: var(--cor-primaria);
-    text-align: center;
-    padding: 6% 0% 7% 0%;
-}
-
-.clientes__title{
-    font-family: var(--font-principal);
-    font-weight: 700;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    color: var(--cor-terciaria);
-    padding-bottom: 20px;
-}
-
-.clientes__marca{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style-type: none;
-    padding-bottom: 2%;
-    gap: 1%;
+    align-content: center;
+    text-align: center;
+    padding: 5% 10%;
 }
-.clientes__marca img{
+
+.nitidus_fly__text{
+    width: 100%;
+}
+
+.nitidus_fly h2{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 2.3rem;
+    padding-bottom: 2%;
+}
+
+.nitidus_fly p{
+    color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    padding-bottom: 8%;
+}
+
+.nitidus_fly img{
     width: 50%;
+}
+
+.nitidus_fly a {
+    width: 50%;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 5px;
+    padding: 3% 3%;
+    font-family: var(--font-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.nitidus_fly a:hover{
+    text-decoration: underline;
 }
 
 .midias{
@@ -458,15 +484,20 @@
     .certifications__img__item{
         width: 40%;
     }
-    .clientes__title{
-        font-size: 7rem;
-        padding-bottom: 50px;
+    .nitidus_fly img{
+        width: 40%;
     }
-    .clientes__marca{
-        gap: 10%;
+    .nitidus_fly__text{
+        width: 40%;
     }
-    .clientes__marca img{
-        width: 140%;
+    .nitidus_fly h2{
+        font-size: 6rem;
+    }
+    .nitidus_fly p{
+        font-size: 3rem;
+    }
+    .nitidus_fly a{
+        font-size: 3rem;
     }
     .midias{
         gap: 5%;
@@ -615,7 +646,7 @@
         padding: 2%;
     }
     .certificate h3{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     .certificate p{
         font-size: 1.5rem;
@@ -631,8 +662,9 @@
     .certifications__title{
         font-size: 2.2rem;
     }
-    .clientes__marca{
-        padding: 0% 4% 2% 4%;
+    .nitidus_fly{
+        flex-direction: column;
+        padding: 7% 10% 15% 10%;
     }
     .midias{
         flex-direction: column;
@@ -742,19 +774,18 @@
     .certifications__img__item{
         width: 40%;
     }
-    .clientes{
-        padding: 15% 0% 10% 0%;
-    }
-    .clientes__marca{
+    .nitidus_fly{
         flex-direction: column;
+        padding: 7% 10% 15% 10%;
     }
-    .clientes__title{
-        font-size: 2.5rem;
-        color: var(--cor-secundaria);
+    .nitidus_fly h2{
+        font-size: 2rem;
     }
-    .clientes__marca img{
-        padding: 15% 0%;
-        width: 60%;
+    .nitidus_fly p{
+        font-size: 1.2rem;
+    }
+    .nitidus_fly img{
+        width: 70%;
     }
     .midias{
         flex-direction: column;
