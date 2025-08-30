@@ -77,8 +77,11 @@
 .seta{
     display: flex;
     justify-content: center;
-    color: var(--cor-primaria);
-    font-size: 5rem;
+}
+
+.seta img{
+    width: 4%;
+    padding: 2% 0% 1% 0%;
 }
 
 .manifest{
@@ -627,6 +630,10 @@
         line-height: 1.9rem;
         width: 80%;
     }
+    .seta img{
+        width: 5%;
+        padding: 5% 0% 3% 0%;
+     }
     .gridsolutions__list{
         width: 80%;
         padding-bottom: 3%;
@@ -746,6 +753,10 @@
     }
     .manifest__content{
         width: 80%;
+    }
+    .seta img{
+        width: 10%;
+        padding: 7% 0% 3% 0%;
     }
     .gridsolutions__list{
         width: 80%;
