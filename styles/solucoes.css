@@ -510,16 +510,31 @@ hr{
     .metod__text__title{
         padding: 4%;
     }
+    .metodologia a {
+        width: 30%;
+        padding: 4% 7%;
+    }
     .solutions{
         text-align: center;
-        padding: 7% 2%;
+        padding: 7% 0%;
+    }
+    .solutions div{
+        display: flex;
+        justify-content: center;
+        padding: 2% 2%;
     }
     .sol__pombos, .sol__aeroporto, .sol__fauna{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sol__pombos__text, .sol__aeroporto__text, .sol__fauna__text{
+        width: 80%;
     }
     .solutions img{
         padding: 0% 15%;
         border-radius: 10px;
+        width: 50%;
     }
     .solutions a{
         width: 40%;
@@ -532,23 +547,43 @@ hr{
     .ed__text__title{
         padding: 4%;
     }
+    .ed__text{
+        width: 90%;
+    }
+    .education a{
+        padding: 4% 6%;
+    }
 }
 
 @media screen and (max-width: 450px){
     .menu__list{
         width: 70%;
     }
+    .metod__text{
+        width: 80%;
+    }
     .metodologia img{
         padding-top: 7%;
     }
     .metodologia a {
-    padding: 3% 10%;
+        padding: 3% 10%;
+    }
+    .solutions div{
+        padding: 3% 0%;
+    }
+    .solutions img{
+        padding: 0% 7%;
+        border-radius: 10px;
+        width: 80%;
     }
     .solutions p{
-        padding: 0% 3% 0% 3%;
+        padding: 2% 0%;
     }
     .education p{
-        padding: 0% 7% 0% 7%;
+        padding: 0% 2% 0% 2%;
+    }
+    .ed__text{
+        width: 100%;
     }
     .education img{
         padding: 3% 15% 0% 15%;

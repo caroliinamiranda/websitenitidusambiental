@@ -366,10 +366,11 @@ hr{
         width: 90%; 
         text-align: center;
         gap: 5%;
-        padding: 5% 0%;
+        padding: 5% 0% 1% 0%;
     }
-    .eco img{
+    .eco video{
         width: 80%;
+        padding-bottom: 5%;
     }
     .equipe{
         flex-direction: column;   
@@ -394,11 +395,15 @@ hr{
         border: var(--cor-primaria) solid 0.5px;
     }
     .eco{
-        padding: 30% 0% 5% 0%;
+        padding: 30% 0% 7% 0%;
+        width: 90%;
     }
-    .eco img{
-        width: 95%;
-        padding-top: 3%;
+    .eco__text{
+        width: 90%;
+    }
+    .eco video{
+        width: 90%;
+        padding-bottom: 5%;
     }
     .equipe img{
         width: 90%;
